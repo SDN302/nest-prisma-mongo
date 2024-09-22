@@ -10,10 +10,18 @@ import {
 import { User } from '@prisma/client';
 import { updateUserDto, UserDto } from './dtos/user.dto';
 import { UserService } from './user.service';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('users')
+@ApiTags('Users')
 export class UserController {
   constructor(private readonly userService: UserService) {}
+
+  // Linh
+  @Get()
+  getAll(): Promise<User[]> {
+    return this.userService.getAll();
+  }
 
   // Vuong
   @Post()
@@ -22,12 +30,7 @@ export class UserController {
   }
 
   // Linh
-  @Get()
-  getAll(): Promise<User[]> {
-    return this.userService.getAll();
-  }
-
-  // Linh
+  @Get(':id')
   getById(@Param('id') id: string): Promise<User> {
     return this.userService.getById(id);
   }
