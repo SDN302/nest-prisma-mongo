@@ -3,9 +3,6 @@
 
 ### Tech Stack
 <img src="https://skillicons.dev/icons?i=nestjs,prisma,mongo" /><br/><br/>
-- Nestjs: [Explore Now!!!](https://nestjs.com)
-- MongoDB: [Explore Now!!!](https://www.mongodb.com)
-- Prisma: [Explore Now!!!](https://www.prisma.io)
 
 ### Setup
 - Create Nest Project
