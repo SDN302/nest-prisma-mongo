@@ -2,6 +2,7 @@
 ## Implement the end-to-end solution integrating Nestjs, mongodb, Prisma to build REST API
 
 ### Tech Stack
+<img src="https://skillicons.dev/icons?i=nestjs,prisma,mongo" /><br/><br/>
 - Nestjs: [Explore Now!!!](https://nestjs.com)
 - MongoDB: [Explore Now!!!](https://www.mongodb.com)
 - Prisma: [Explore Now!!!](https://www.prisma.io)
@@ -26,6 +27,20 @@ npm install -g prisma
 ```bash
 npx prisma init
 ```
+
+- Generates files based on a schematic
+
+```bash
+nest g <schematic> <name> [options]
+```
+
+| Name        | Alias | Description                                                                                     |
+|-------------|-------|-------------------------------------------------------------------------------------------------|
+| controller  | co    | Generate a controller declaration.                                                               |
+| module      | mo    | Generate a module declaration.                                                                   |
+| service     | s     | Generate a service declaration.                                                                  |
+
+
 
 ### Run:
 
