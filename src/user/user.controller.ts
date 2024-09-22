@@ -23,11 +23,14 @@ export class UserController {
 
   // Linh
   @Get()
-  getAll() {}
+  getAll(): Promise<User[]> {
+    return this.userService.getAll();
+  }
 
   // Linh
-  @Get(':id')
-  getById(@Param('id') id: string): Promise<User> {}
+  getById(@Param('id') id: string): Promise<User> {
+    return this.userService.getById(id);
+  }
 
   // Vuong
   @Put(':id')
@@ -37,5 +40,7 @@ export class UserController {
 
   // Linh
   @Delete(':id')
-  delete(@Param('id') id: string): Promise<User> {}
+  delete(@Param('id') id: string): Promise<User> {
+    return this.userService.delete(id);
+  }
 }
