@@ -17,7 +17,9 @@ export class UserController {
 
   // Vuong
   @Post()
-  create(@Body() body: UserDto): Promise<User> {}
+  create(@Body() body: UserDto): Promise<User> {
+    return this.userService.create(body);
+  }
 
   // Linh
   @Get()
@@ -29,7 +31,9 @@ export class UserController {
 
   // Vuong
   @Put(':id')
-  update(@Param('id') id: string, @Body() body: updateUserDto): Promise<User> {}
+  update(@Param('id') id: string, @Body() body: updateUserDto): Promise<User> {
+    return this.userService.update(id, body);
+  }
 
   // Linh
   @Delete(':id')
