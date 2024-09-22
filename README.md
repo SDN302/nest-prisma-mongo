@@ -25,6 +25,12 @@ npm install -g prisma
 npx prisma init
 ```
 
+- Push the initial schema to the database:
+
+```bash
+npx prisma db push
+```
+
 - Generates files based on a schematic
 
 ```bash
