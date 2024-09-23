@@ -34,7 +34,7 @@ npx prisma db push
 - Generates files based on a schematic
 
 ```bash
-nest g <schematic> <name> [options] --spec-no
+nest g <schematic> <name> [options]
 ```
 
 | Name        | Alias | Description                                                                                     |
