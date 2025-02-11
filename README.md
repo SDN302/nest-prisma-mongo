@@ -1,3 +1,9 @@
+## 📢 Advertisement
+
+<img src="https://raw.githubusercontent.com/fptqnk17/.github/refs/heads/main/images/banner-bao-thu.png" alt="Advertisement" />
+
+---
+
 # SDN302 - Group 1
 ## Implement the end-to-end solution integrating Nestjs, mongodb, Prisma to build REST API
 
